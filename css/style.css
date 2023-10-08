@@ -1,0 +1,351 @@
+:root {
+    --secondary-beige: #d7ccb2;
+    --primary-red: #cc0100;
+    --header-text:'Poppins', sans-serif;
+    --body-text:'Roboto', sans-serif;
+}
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+
+.wrapper{
+    max-width: 1000px;
+    border: solid black;
+    margin: 0 auto;
+        
+}
+
+
+header{
+    background-image: url(../images/KembicHeader.png);
+    background-size: cover;
+    height: 13vh;
+    background-position: center;
+}
+
+nav{
+    background-color: var(--primary-red); 
+    padding: 5px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-family: var(--header-text);
+    color: white ;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.sec1{
+overflow: hidden;
+}
+
+
+.sec1 h1{
+    font-family: var(--body-text);
+    color: #202123;
+    font-size: 1.875rem;
+    padding: 3em;
+    padding-right: 10em;
+    
+}
+
+.sec1{
+    background-color: aliceblue;
+    background-image: url(../images/oakridgeBC.png);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-blend-mode: multiply;
+}
+
+#About{
+    background-color: var(--secondary-beige);
+    height: 55vh;
+    padding: 40px 30px 30px 40px;
+    overflow: hidden;
+}
+
+#About p{
+    color: var(--body-text);
+    font-family: var(--body-text);
+    font-size: 1.125rem;
+    line-height: 30px;
+    letter-spacing: .5px;
+    text-align: center;
+    padding-right: 5em;
+    padding-left: 5em;
+   
+}
+
+#gallery{
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+
+#gallery h1{
+    font-family: var(--header-text);
+    text-align: center;
+    font-size: 2.8125rem;
+    padding-top: 40px;
+}
+
+.gallery-images{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 3.125rem;
+}
+
+.gallery-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid black;
+}
+
+.gal-btn{
+    background-color: var(--primary-red);
+    color: white;
+    width: 9.375rem;
+    padding: .9375rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    border-radius: .25rem;
+
+}
+
+footer{
+    height: 25vh;
+    font-family: var(--body-text);
+    background-color: var(--secondary-beige);
+    padding: 3.125rem;
+}
+
+
+
+
+/* This is the 760px Max-width Media Query*/
+
+@media screen and (max-width: 760px) {
+    header{
+        background-image: url(../images/KembicHeader.png);
+        background-size: cover;
+        height: 10vh;
+        background-position: center;
+    }
+
+    .sec1 h1{
+        font-family: var(--body-text);
+        color: #202123;
+        font-size: 20px;
+        padding: 3em;
+        padding-right: 10em;
+    }
+    
+    .sec1{
+        background-color: aliceblue;
+        background-image: url(../images/oakridgeBC.png);
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        background-blend-mode: multiply;
+    }
+
+
+    #About p{
+        color: var(--body-text);
+        font-family: var(--body-text);
+        font-size: .9375rem;
+        line-height: 20px;
+        letter-spacing: .5px;
+        text-align: center;
+        padding-right: 5em;
+        padding-left: 5em;
+        
+       
+    }
+
+    #gallery h1{
+        font-family: var(--header-text);
+        text-align: center;
+        font-size: 2.1875rem;
+        padding-top: 40px;
+    }
+
+    .gallery-images{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 10px;
+        padding: 3.125rem;
+    }
+    .gallery-images img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: solid black;
+    }
+    
+    .gal-btn{
+        background-color: var(--primary-red);
+        color: white;
+        width: 9.375rem;
+        padding: .9375rem;
+        border: none;
+        margin-bottom: 1.25rem;
+        border-radius: .25rem;
+    
+    }
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+/* This is the 400px Max-width Media Query*/
+
+
+@media screen and (max-width: 460px) {
+    header{
+        background-image: url(../images/KembicHeader.png);
+        background-size: cover;
+        height: 6vh;
+        background-position: center;
+    }
+
+    nav{
+        background-color: var(--primary-red); 
+        padding: .0125rem;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li{
+        list-style: none;
+    }
+    
+    nav ul li a{
+        font-family: var(--header-text);
+        color: white ;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+    nav a:hover{
+        color: black;
+    }
+
+    .sec1 h1{
+        font-family: var(--body-text);
+        color: #202123;
+        font-size: .75rem;
+        padding: 3em;
+        padding-right: 10em;
+    }
+    
+    .sec1{
+        background-color: aliceblue;
+        background-image: url(../images/oakridgeBC.png);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        background-blend-mode: multiply;
+    }
+
+    #About{
+        background-color: var(--secondary-beige);
+        height: 85vh;
+        padding: 40px 30px 30px 40px;
+        overflow: hidden;
+    }
+
+    #About p{
+        color: var(--body-text);
+        font-family: var(--body-text);
+        font-size: 12px;
+        text-align: center;
+        padding-right: 5em;
+        padding-left: 5em;
+        
+       
+    }
+
+    #gallery h1{
+        font-family: var(--header-text);
+        text-align: center;
+        font-size: 1.875rem;
+        padding-top: 40px;
+    }
+
+    .gallery-images{
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 3.125rem;
+    }
+    .gallery-images img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: solid black;
+    }
+    
+    .gal-btn{
+        background-color: var(--primary-red);
+        color: white;
+        width: 9.375rem;
+        padding: .625rem;
+        border: none;
+        margin-bottom: 1.25rem;
+        border-radius: .25rem;
+    
+    }
+
+    footer{
+        height: 45vh;
+        font-family: var(--body-text);
+        background-color: var(--secondary-beige);
+        padding: 3.125rem;
+    }
+     
+
+}
+
+
